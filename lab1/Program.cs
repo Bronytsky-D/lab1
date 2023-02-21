@@ -69,7 +69,7 @@ namespace lab1
             {
                 Console.Write($"{b[i]} ");
             }
-            Console.WriteLine($"max elem b {b.Max()}");
+            Console.WriteLine($"--max elem b {b.Max()}");
         }
         public static int[,] GenerateMatrix()
         {
