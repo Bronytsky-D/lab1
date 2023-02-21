@@ -67,9 +67,9 @@ namespace lab1
             }
             for (int i = 0; i < b.Length; i++)
             {
-                Console.Write($"\n {b[i]} ");
+                Console.Write($"{b[i]} ");
             }
-            Console.WriteLine($"max elem b {b.Max()}");
+            Console.WriteLine($"--max elem b {b.Max()}");
         }
         public static int[,] GenerateMatrix()
         {
