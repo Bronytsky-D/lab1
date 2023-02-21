@@ -10,7 +10,7 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Task_1();
+            Task_3();
         }
         static void Task_1()
         {
@@ -49,19 +49,9 @@ namespace lab1
         }
         static void Task_3()
         {
-            int rows = 5;
-            int cols = 7;
-            int[,] A = new int[rows, cols];
-            Random random = new Random();
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < cols; j++)
-                {
-                    A[i, j] = random.Next(0, 100);
-                }
-            }
-            int[] b = new int[A.Length];
+            int[,] A = GenerateMatrix();
+            writeMatrix(A);
+            int[] b = new int[A.GetLength(0)];
             int count = 0;
             for (int i = 0; i < A.GetLength(0); i++)
             {
@@ -81,5 +71,35 @@ namespace lab1
             }
             Console.WriteLine($"max elem b {b.Max()}");
         }
+        public static int[,] GenerateMatrix()
+        {
+            int rows = 5;
+            int cols = 7;
+            int[,] matrix = new int[rows, cols];
+            Random random = new Random();
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    matrix[i, j] = random.Next(0, 100);
+                }
+            }
+
+            return matrix;
+        }
+        public static void writeMatrix(int[,] matrix) 
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write($"{matrix[i,j]} ");
+                }
+                Console.Write($"\n");
+            }
+
+        }
+        
     }
 }
