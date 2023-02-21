@@ -47,6 +47,39 @@ namespace lab1
             else
                 Console.WriteLine($"Min val is c= {c}");
         }
+        static void Task_3()
+        {
+            int rows = 5;
+            int cols = 7;
+            int[,] A = new int[rows, cols];
+            Random random = new Random();
 
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    A[i, j] = random.Next(0, 100);
+                }
+            }
+            int[] b = new int[A.Length];
+            int count = 0;
+            for (int i = 0; i < A.GetLength(0); i++)
+            {
+                for (int j = 0; j < A.GetLength(1); j++)
+                {
+                    if (A[i, j] % 2 == 0)
+                    {
+                        count++;
+                    }
+                }
+                b[i] = count;
+                count = 0;
+            }
+            for (int i = 0; i < b.Length; i++)
+            {
+                Console.Write($"{b[i]} ");
+            }
+            Console.WriteLine($"max elem b {b.Max()}");
+        }
     }
 }
