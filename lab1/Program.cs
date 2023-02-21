@@ -29,21 +29,24 @@ namespace lab1
         }
         static void Task_2()
         {
-            Console.Write("Введіть x , y , z  : ");
+            Console.Write("Введіть x : ");
             double x = double.Parse(Console.ReadLine());
+            Console.Write("Введіть y : ");
             double y = double.Parse(Console.ReadLine());
+            Console.Write("Введіть z : ");
             double z = double.Parse(Console.ReadLine());
             double a, b, c;
-            a = (x * y) / z + z / x * y;
-            b = Math.Sin((x * y + z) / z) - Math.Cos(1 - (z / x * y)) + 1 / 2;
-            c = Math.Log10(100) - Math.Sqrt(Math.Pow((x * y / z) + (z / x * y), 2) + 5);
+            a = (x * y) / z + z / (x * y);
+            b = Math.Sin(((x * y) + z) / z) - Math.Cos(1 + (z / (x * y))) + 0.5;
+            c = 2 - Math.Sqrt(Math.Pow(((x * y) / z) + (z / (x * y)), 2) + 5);
             Console.WriteLine($"a {a}, b {b}, c{c}");
             if (a >= b && a <= c)
-                Console.WriteLine($"min val is b {b}");
+                Console.WriteLine($"Min val is b= {b}");
             else if (a <= b && a <= c)
-                Console.WriteLine($"min val is a {a}");
+                Console.WriteLine($"Min val is a= {a}");
             else
-                Console.WriteLine($"min val is c {c}");
+                Console.WriteLine($"Min val is c= {c}");
         }
+
     }
 }
