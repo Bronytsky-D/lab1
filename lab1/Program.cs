@@ -40,10 +40,10 @@ namespace lab1
             b = Math.Sin(((x * y) + z) / z) - Math.Cos(1 + (z / (x * y))) + 0.5;
             c = 2 - Math.Sqrt(Math.Pow(((x * y) / z) + (z / (x * y)), 2) + 5);
             Console.WriteLine($"a {a}, b {b}, c{c}");
-            if (a >= b && a <= c)
-                Console.WriteLine($"Min val is b= {b}");
-            else if (a <= b && a <= c)
+            if (a <= b && a <= c)
                 Console.WriteLine($"Min val is a= {a}");
+            else if (b <= a && b <= c)
+                Console.WriteLine($"Min val is b= {b}");
             else
                 Console.WriteLine($"Min val is c= {c}");
         }
