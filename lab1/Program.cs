@@ -10,7 +10,7 @@ namespace lab1
     {
         static void Main(string[] args)
         {
-            Task_3();
+            Task_2();
         }
         static void Task_1()
         {
