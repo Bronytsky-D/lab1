@@ -85,6 +85,20 @@ namespace lab1
         }
         public static int[,] GenerateMatrix()
         {
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}"); 
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
             int rows = 5;
             int cols = 7;
             int[,] matrix = new int[rows, cols];
