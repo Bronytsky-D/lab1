@@ -14,6 +14,18 @@ namespace lab1
         }
         static void Task_1()
         {
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}"); 
+            Console.WriteLine("The octal equivalent of {0} is {1}"); 
+            Console.WriteLine("The octal equivalent of {0} is {1}"); 
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
+            Console.WriteLine("The octal equivalent of {0} is {1}");
             int octal = 0, i = 1;
             Console.Write("Enter a decimal number: ");
             int decimalNumber = int.Parse(Console.ReadLine());
