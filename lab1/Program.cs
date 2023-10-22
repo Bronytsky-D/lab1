@@ -14,9 +14,7 @@ namespace lab1
         }
         static void Task_1()
         {
-            Console.WriteLine("The octal equivalent of {0} is {1}");
-
-            Console.WriteLine("The octal equivalent of {0} is {1}");
+            
             Console.WriteLine("The octal equivalent of {0} is {1}"); 
             Console.WriteLine("The octal equivalent of {0} is {1}"); 
             Console.WriteLine("The octal equivalent of {0} is {1}"); 
